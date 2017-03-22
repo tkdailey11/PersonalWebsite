@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ccc</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/home" class="navbar-brand">Tyler Dailey</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%= link_to 'Home', '/home' %></li>
+      <li><%= link_to 'Resume', '/resume' %></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <%= yield %>
+</div>
+</body>
+</html>
