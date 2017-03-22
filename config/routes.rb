@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/resume' => 'static_pages#resume'
 
+  get '/about' => 'static_pages#about'
+
   get 'download_pdf', to: 'static_pages#download_pdf'
 
   root 'static_pages#home'
