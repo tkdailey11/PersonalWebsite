@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   def resume
   end
 
+  def projects
+  end
+
   def download_pdf
     send_file "#{Rails.root}/Resume.pdf", type: 'application/pdf', x_sendfile: true
   end

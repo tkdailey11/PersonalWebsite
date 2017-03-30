@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/about' => 'static_pages#about'
 
+  get '/projects' => 'static_pages#projects'
+
   get 'download_pdf', to: 'static_pages#download_pdf'
 
   root 'static_pages#home'
