@@ -53,10 +53,16 @@ group :test do
   gem 'minitest-reporters'
 end
 
+gem 'figaro'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'capistrano'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma'
+  gem 'sqlite3', '1.3.12'
 end
 
 group :production do
